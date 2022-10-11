@@ -15,9 +15,8 @@ if (luck == "lucky") {
   document.getElementById("possibleFlag").innerHTML = 'try using java<i class="hidethis">nese</i>';
   document.getElementById("tabText").innerHTML = "lucky?";
 } else if (luck != "begja") {
-    document.getElementById("possibleFlag").innerHTML = "UDCTF{i_question_the_accuracy_of_google_translate}"; 
-  document.getElementById("tabText").innerHTML = "lucky!";
+    document.cookie = "lucky=" + makeid(5);
 } else {
-
-  document.cookie = "lucky=" + makeid(5);
+  document.getElementById("possibleFlag").innerHTML = "UDCTF{i_question_the_accuracy_of_google_translate}"; 
+  document.getElementById("tabText").innerHTML = "lucky!";
 }
